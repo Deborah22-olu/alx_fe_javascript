@@ -5,8 +5,12 @@ const quotes = [
   { text: "To be, or not to be, that is the question.", category: "Philosophy" },
 ];
 
+
+
+
 // Function to display a random quote and update the DOM using innerHTML
-function displayRandomQuote() {
+function showRandomQuote() {
+  // same code as before
   if (quotes.length === 0) {
     document.getElementById('quoteDisplay').innerHTML = 'No quotes available.';
     return;
@@ -15,6 +19,7 @@ function displayRandomQuote() {
   const quote = quotes[randomIndex];
   document.getElementById('quoteDisplay').innerHTML = `"${quote.text}" &mdash; <strong>${quote.category}</strong>`;
 }
+
 
 // Function to add a new quote to the quotes array and update the DOM
 function addQuote() {
@@ -39,7 +44,8 @@ function addQuote() {
 }
 
 // Event listener on the “Show New Quote” button
-document.getElementById('newQuote').addEventListener('click', displayRandomQuote);
+document.getElementById('newQuote').addEventListener('click', showRandomQuote);
+
 
 // Event listener on the Add Quote button
 document.getElementById('addQuoteBtn').addEventListener('click', addQuote);
