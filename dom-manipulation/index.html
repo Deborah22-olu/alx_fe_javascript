@@ -10,7 +10,17 @@
   <div id="quoteDisplay">Click "Show New Quote" to start.</div>
   <button id="newQuote">Show New Quote</button>
 
-  <!-- No form here, it will be created dynamically -->
+  <!-- Add quote form -->
+  <div id="addQuoteSection">
+    <input type="text" id="newQuoteText" placeholder="Enter new quote" />
+    <button id="addQuoteBtn">Add Quote</button>
+  </div>
+
+  <!-- Import and Export buttons -->
+  <div id="jsonControls">
+    <button id="exportBtn">Export Quotes</button>
+    <input type="file" id="importFile" accept=".json" />
+  </div>
 
   <script src="script.js"></script>
 </body>
