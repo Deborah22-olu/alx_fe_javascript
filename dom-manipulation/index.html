@@ -31,6 +31,13 @@
     button:hover {
       background-color: #0056b3;
     }
+    #syncNotification {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #e0ffe0;
+      border: 1px solid #00aa00;
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -62,6 +69,8 @@
     <h3>Manage Quotes</h3>
     <button id="exportBtn">Export Quotes</button>
     <input type="file" id="importFile" accept=".json" />
+    <button id="syncBtn">Sync with Server</button>
+    <div id="syncNotification"></div>
   </div>
 
   <!-- Include JS -->
